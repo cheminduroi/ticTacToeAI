@@ -34,12 +34,6 @@ function renderBoard($board) {
     }
 }
 
-function getUserMove() {
-    echo "What move would you like to make? ";
-    $move = trim(fgets(STDIN));
-    return $move;
-}
-
 function makeMove($board, $move, $player) {
     $board[cellLocation[$move][0]][cellLocation[$move][1]] = $player;
     return $board;
